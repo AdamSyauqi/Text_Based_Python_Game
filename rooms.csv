@@ -1,0 +1,2 @@
+room0,the starting room,room1,none,none,none,false,water|key|flashlight,
+room1,intersection,room2,none,room0,room3,true,snack bar|key,water|key

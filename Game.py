@@ -185,50 +185,6 @@ def unlock(location):
         else:
             print("That location doesn't exist.")
 
-#def check_enemy():
-#    global current_room
-#    global rooms
-#    if 'enemy' in current_room:
-#        fight()
-#    else:
-#        pass
-
-#def fight():
-#    if current_room['enemy'] == 'Jati':
-#        TheEnemy = Jati
-#    else:
-#        pass
-#    do = input(str('What do ou want to do?: ').lower())
-#    if do == attack:
-#        attack()
-#    elif do == item:
-#        use_item()
-#    elif do == flee:
-#        pass
-
-#def attack():
-#    for item in player_items:
-#        if item in weapons_list:
-#            print(item)
-#    weapon_attack = input('What weapon do you want to use?: ')
-#    if weapon_attack == sword:
-#        TheEnemy.health -= 3
-#    elif weapon_attack == knife:
-#        TheEnemy.health -= 2
-
-
-class Enemy:
-    def __init__(self, name, health, damage):
-        self.name = name
-        self.health = health
-        self.damage = damage
-    
-    def is_alive(self):
-        return self.health > 0
-
-class Jati(Enemy):
-    def __init__(self):
-        super().__init__(name="Jati", heath=5, damage=18)
 
 class my_prompt(Cmd):
     def do_Move(self, args):
